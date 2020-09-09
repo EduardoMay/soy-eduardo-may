@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +11,59 @@
 	--color-primary: #028090;
 	--color-secondary: #f0f3bd;
 	--color-resalt-1: #02c39a;
-	--color-resalt-1: #c3022b;
+	--color-resalt-2: #c3022b;
 	--color-b-primary: #f8f9fa;
 	--color-b-secondary: #212529;
+}
+
+body {
+	background-color: var(--color-b-primary);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 1rem;
+	font-family: 'Fira Code', menospace;
+}
+
+header {
+	height: 80px;
+	background-color: #ffffff;
+}
+
+nav {
+	margin: 0 24px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 80px;
+	align-items: center;
+	grid-gap: 24px;
+	color: #000000;
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 600;
+}
+
+nav > .logo {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+nav .nav-item-1 {
+	grid-column-start: 10;
+}
+
+nav .nav-item-2 {
+	grid-column-start: 11;
+}
+
+nav > a {
+	color: #000000;
 }
