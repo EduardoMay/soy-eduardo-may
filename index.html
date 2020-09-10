@@ -192,26 +192,31 @@
 			</div>
 		</section>
 
-		<section>
-			<p>CONTACTAME</p>
-			<p>Preguntame sin compromiso</p>
+		<section class="contacto-main">
+			<div class="contacto-description">
+				<p>CONTACTAME</p>
+				<p>Preguntame sin compromiso</p>
+			</div>
 
 			<form>
-				<div>
+				<div class="form-group">
 					<div>
-						<input type="text" required />
+						<label for="name">Nombre</label>
+						<input type="text" id="name" required />
 					</div>
 					<div>
-						<input type="email" required />
+						<label for="email">email</label>
+						<input type="email" id="email" required />
 					</div>
 				</div>
 
 				<div>
+					<label for="message">Mensage</label>
 					<textarea id="message" cols="30" rows="10"></textarea>
 				</div>
 
-				<div>
-					<button type="button">Enviar</button>
+				<div class="form-btn">
+					<button class="btn" type="button">Enviar</button>
 				</div>
 			</form>
 		</section>

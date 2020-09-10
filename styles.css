@@ -410,3 +410,78 @@ nav > a {
 	font-weight: normal;
 	font-size: 24px;
 }
+
+.contacto-main {
+	padding: 38px 0;
+	text-align: center;
+	background: linear-gradient(97.51deg, #02c39a 0%, #028090 100%);
+}
+
+.contacto-description,
+form {
+	margin: 0 260px;
+}
+
+.contacto-description p {
+	font-family: 'Source Code Pro', monospace;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.contacto-description p:nth-child(1) {
+	font-size: 40px;
+	margin-bottom: 6px;
+}
+
+.contacto-description p:nth-child(2) {
+	font-size: 32px;
+	margin-bottom: 34px;
+}
+
+.contacto-main form {
+	text-align: left;
+}
+
+.contacto-main form label {
+	display: inline-block;
+	margin-bottom: 4px;
+	color: #ffffff;
+	font-family: 'Source Code Pro', monospace;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.contacto-main form input,
+.contacto-main form textarea {
+	width: 100%;
+	outline: none;
+	background: #ffffff;
+	border: 1px solid #f0f3bd;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 15px 9px;
+}
+
+.form-group {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 24px;
+	margin-bottom: 29px;
+}
+
+.contacto-main .form-btn {
+	text-align: right;
+}
+
+.contacto-main .form-btn .btn {
+	background: #c3022b;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: #ffffff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-top: 40px;
+}
