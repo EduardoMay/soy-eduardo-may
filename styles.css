@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
 	margin: 0;
@@ -14,6 +13,7 @@
 	--color-resalt-2: #c3022b;
 	--color-b-primary: #f8f9fa;
 	--color-b-secondary: #212529;
+	--font-primary: 'Fira Sans', sans-serif;
 }
 
 body {
@@ -36,7 +36,7 @@ img {
 .btn {
 	padding: 10px 20px;
 	font-size: 1rem;
-	font-family: 'Fira Code', menospace;
+	font-family: var(--font-primary);
 }
 
 header {
@@ -52,7 +52,7 @@ nav {
 	align-items: center;
 	grid-gap: 24px;
 	color: #000000;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-weight: 600;
 }
 
@@ -105,7 +105,7 @@ nav > a {
 
 .main-description-1 h1,
 .main-description-1 h2 {
-	font-family: 'Fira Code', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: 600;
 }
@@ -167,7 +167,7 @@ nav > a {
 }
 
 .profile-description p {
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 28px;
@@ -180,7 +180,7 @@ nav > a {
 	background: linear-gradient(90deg, #02c39a 0%, #028090 100%);
 	padding: 51px 0;
 	text-align: center;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: bold;
 	font-size: 40px;
@@ -220,7 +220,7 @@ nav > a {
 
 .habilidades-item p {
 	padding: 10px 16px;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -260,7 +260,7 @@ nav > a {
 }
 
 .aprendiendo-main-title p {
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: bold;
 	font-size: 60px;
@@ -299,7 +299,7 @@ nav > a {
 
 .aprendiendo-item p {
 	padding: 10px 16px;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -324,7 +324,7 @@ nav > a {
 
 .main-4-title p {
 	color: #ffffff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: bold;
 	font-size: 40px;
@@ -367,7 +367,7 @@ nav > a {
 
 .main-4-item p {
 	margin-bottom: 20px;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -405,7 +405,7 @@ nav > a {
 
 .servicios-item p {
 	padding: 10px 16px;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -423,7 +423,7 @@ form {
 }
 
 .contacto-description p {
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: bold;
 	color: #ffffff;
@@ -447,7 +447,7 @@ form {
 	display: inline-block;
 	margin-bottom: 4px;
 	color: #ffffff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -500,7 +500,7 @@ form {
 	grid-column-end: 5;
 	align-self: center;
 	color: #ffffff;
-	font-family: 'Source Code Pro', monospace;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: bold;
 	font-size: 32px;
@@ -546,7 +546,7 @@ footer {
 
 .footer-info {
 	color: #ffffff;
-	font-family: Fira Sans;
+	font-family: var(--font-primary);
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
