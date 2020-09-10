@@ -216,6 +216,14 @@ nav > a {
 	border-radius: 50%;
 	border: 3px solid #c4c4c4;
 	margin-bottom: 39px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.habilidades-item figure img {
+	width: 54px;
+	height: 54px;
 }
 
 .habilidades-item p {
@@ -295,6 +303,14 @@ nav > a {
 	margin: 41px 0;
 	border-radius: 50%;
 	border: 3px solid #c4c4c4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aprendiendo-item figure img {
+	width: 64px;
+	height: 64px;
 }
 
 .aprendiendo-item p {
@@ -359,10 +375,19 @@ nav > a {
 .main-4-item figure {
 	width: 64px;
 	height: 64px;
-	background: #c4c4c4;
+	border: 3px solid #c4c4c4;
 	border-radius: 50%;
 	margin-top: 17px;
 	margin-bottom: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-4-item figure img {
+	width: 32px;
+	height: 32px;
+	object-fit: initial;
 }
 
 .main-4-item p {
@@ -533,6 +558,15 @@ form {
 	border-radius: 50%;
 	background-color: #ffffff;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sociales-item a img {
+	object-fit: initial;
+	width: 32px;
+	height: auto;
 }
 
 footer {
