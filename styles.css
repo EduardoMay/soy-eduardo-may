@@ -534,3 +534,20 @@ form {
 	background-color: #ffffff;
 	text-align: center;
 }
+
+footer {
+	width: 100%;
+	padding: 25px 142px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #028090;
+}
+
+.footer-info {
+	color: #ffffff;
+	font-family: Fira Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
