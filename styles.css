@@ -400,9 +400,7 @@ nav > a {
 }
 
 .servicios-items {
-	margin: 66px 0;
-	margin-right: 109px;
-	margin-left: 53px;
+	padding: 66px 109px;
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 54px;
