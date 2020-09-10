@@ -216,7 +216,7 @@
 				</div>
 
 				<div class="form-btn">
-					<button class="btn" type="button">Enviar</button>
+					<button class="btn" type="button" id="send">Enviar</button>
 				</div>
 			</form>
 		</section>
@@ -265,5 +265,21 @@
 			</div>
 			<div class="footer-logo">Hola-Lalo</div>
 		</footer>
+
+		<script>
+			const btn = document.getElementById('send');
+
+			btn.addEventListener('click', (_) => {
+				const name = document.getElementById('name').value;
+				const email = document.getElementById('email').value;
+				const message = document.getElementById('message').value;
+
+				const messageWa = `Nombre: *${name}*; Email: *${email}*; Mensaje: ${message}`;
+
+				const url = `https://wa.me/529981362079?text=${messageWa}`;
+
+				window.open(url, '_blank');
+			});
+		</script>
 	</body>
 </html>
