@@ -73,6 +73,59 @@ nav > .logo {
 	color: #000000;
 }
 
+.active-closed,
+.active-open {
+	display: none;
+}
+
+@media (max-width: 576px) {
+	header {
+		height: 40px;
+	}
+
+	nav {
+		margin: 0 16px;
+		position: relative;
+		grid-template-rows: 40px;
+		grid-gap: 0;
+	}
+
+	.nav-items {
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: -120%;
+		z-index: 100;
+		grid-column-start: initial;
+		grid-column-end: initial;
+		grid-template-columns: 1fr;
+		grid-template-rows: 20px 1fr 1fr;
+		align-items: center;
+		justify-items: center;
+		background-color: #ffffff;
+		transition: all 180ms;
+	}
+
+	.nav-items.active {
+		left: -16px;
+	}
+
+	.active-closed {
+		display: inline-block;
+		padding-top: 32px;
+		padding-right: 16px;
+		text-align: right;
+		width: 100%;
+	}
+
+	.active-open {
+		display: block;
+		grid-column-start: 12;
+		text-align: center;
+	}
+}
+
 .main-1 {
 	height: 550px;
 	position: relative;
