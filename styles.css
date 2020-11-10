@@ -178,6 +178,9 @@ nav > .logo {
 	margin: 11px 0;
 }
 
+@media (max-width: 576px) {
+}
+
 .profile-main {
 	margin: 0 24px;
 	margin-bottom: 70px;
