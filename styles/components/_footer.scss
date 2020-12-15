@@ -1,0 +1,16 @@
+footer {
+	width: 100%;
+	padding: 25px 142px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #028090;
+}
+
+.footer__info {
+	color: #ffffff;
+	font-family: $font-primary;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}

@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $color-b-primary;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+header {
+	height: 80px;
+	background-color: #ffffff;
+}
