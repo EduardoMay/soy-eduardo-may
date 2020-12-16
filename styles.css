@@ -125,6 +125,15 @@ p {
   border-radius: 5px;
 }
 
+@media (max-width: 576px) {
+  .line__1 {
+    width: 90%;
+  }
+
+  .line__2 {
+    width: 25%;
+  }
+}
 .main__1 {
   height: 550px;
   position: relative;

@@ -13,3 +13,13 @@
 	border: 4px solid #028090;
 	border-radius: 5px;
 }
+
+@media (max-width: 576px) {
+	.line__1 {
+		width: 90%;
+	}
+
+	.line__2 {
+		width: 25%;
+	}
+}
