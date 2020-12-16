@@ -8,16 +8,27 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
 		<title>Soy Eduardo May</title>
 	</head>
 	<body class="animate__animated animate__fadeIn">
 		<header>
 			<nav>
 				<span class="logo">logo</span>
-				<span class="active-open" id="btn-open">O</span>
+				<span class="active-open" id="btn-open"
+					><span class="fa fa-bars"></span
+				></span>
 
 				<div class="nav-items">
-					<span class="active-closed" id="btn-close">X</span>
+					<span
+						class="fa fa-times active-closed"
+						id="btn-close"
+					></span>
 					<a href="/" class="nav-item-1">Inicio</a>
 					<a href="#habilidades" class="nav-item-2">Habilidades</a>
 					<a href="#servicios" class="nav-item-2">Servicios</a>
@@ -26,307 +37,323 @@
 			</nav>
 		</header>
 
-		<section class="main__1">
-			<img
-				class="animate__animated animate__fadeIn"
-				src="imgs/main-1.jpg"
-				alt=""
-			/>
-			<div class="main__description-1">
-				<h1>Bienvenido</h1>
-				<span class="line__1"></span>
-				<h2>¡Dispuesto para trabajar!</h2>
-			</div>
-		</section>
-
-		<section class="profile__container">
-			<figure>
-				<img src="imgs/profile.jpg" alt="" />
-			</figure>
-
-			<div class="profile__description">
-				<span class="line__2"></span>
-				<p>Hola, soy Eduardo, tengo 23 años y soy de Mexico.</p>
-				<p>Me gusta el desarrollo web y las nuevas tecnologias.</p>
-			</div>
-		</section>
-
-		<section class="main__2" id="habilidades">
-			<h2>HABILIDADES</h2>
-		</section>
-
-		<section class="habilidades__items">
-			<div class="habilidades__item">
-				<figure>
-					<img src="imgs/icons/html5.svg" alt="" />
-				</figure>
-
-				<p>Html</p>
-
-				<span class="">⭐⭐⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<img src="imgs/icons/javascript.svg" alt="" />
-				</figure>
-
-				<p>Js</p>
-
-				<span class="">⭐⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<img src="imgs/icons/css.svg" alt="" />
-				</figure>
-
-				<p>Css</p>
-
-				<span class="">⭐⭐⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<img src="imgs/icons/typescript.svg" alt="" />
-				</figure>
-
-				<p>Typescript</p>
-				<span class="">⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<img src="imgs/icons/angular.svg" alt="" />
-				</figure>
-
-				<p>Angular</p>
-				<span class="">⭐⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<img src="imgs/icons/bootstrap.svg" alt="" />
-				</figure>
-
-				<p>Bootstrap</p>
-				<span class="">⭐⭐⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<!-- TODO: BUSCAR IMG -->
-					<img src="imgs/icons/bootstrap.svg" alt="" />
-				</figure>
-
-				<p>PHP</p>
-				<span class="">⭐⭐⭐⭐</span>
-			</div>
-
-			<div class="habilidades__item">
-				<figure>
-					<!-- TODO: BUSCAR IMG -->
-					<img src="imgs/icons/bootstrap.svg" alt="" />
-				</figure>
-
-				<p>Wordpress</p>
-				<span class="">⭐⭐⭐⭐</span>
-			</div>
-		</section>
-
-		<section class="main__3 animate__animated animate__fadeIn">
-			<div class="aprendiendo__main">
-				<figure>
-					<img
-						src="imgs/main-1.jpg"
-						alt=""
-						class="animate__animated animate__fadeIn"
-					/>
-				</figure>
-
-				<div class="aprendiendo__main-title">
-					<p>APRENDIENDO</p>
+		<div class="d-none">
+			<section class="main__1">
+				<img
+					class="animate__animated animate__fadeIn"
+					src="imgs/main-1.jpg"
+					alt=""
+				/>
+				<div class="main__description-1">
+					<h1>Bienvenido</h1>
+					<span class="line__1"></span>
+					<h2>¡Dispuesto para trabajar!</h2>
 				</div>
-			</div>
-			<div class="aprendiendo__items">
-				<div class="aprendiendo__item">
+			</section>
+
+			<section class="profile__container">
+				<figure>
+					<img src="imgs/profile.jpg" alt="" />
+				</figure>
+
+				<div class="profile__description">
+					<span class="line__2"></span>
+					<p>Hola, soy Eduardo, tengo 23 años y soy de Mexico.</p>
+					<p>Me gusta el desarrollo web y las nuevas tecnologias.</p>
+				</div>
+			</section>
+
+			<section class="main__2" id="habilidades">
+				<h2>HABILIDADES</h2>
+			</section>
+
+			<section class="habilidades__items">
+				<div class="habilidades__item">
 					<figure>
-						<img src="imgs/icons/react.svg" alt="" />
+						<img src="imgs/icons/html5.svg" alt="" />
 					</figure>
 
-					<p>React</p>
+					<p>Html</p>
+
+					<span class="">⭐⭐⭐⭐</span>
 				</div>
-				<div class="aprendiendo__item">
+
+				<div class="habilidades__item">
 					<figure>
-						<img src="" alt="" />
+						<img src="imgs/icons/javascript.svg" alt="" />
 					</figure>
 
-					<p>UX/UI</p>
+					<p>Js</p>
+
+					<span class="">⭐⭐⭐</span>
 				</div>
-			</div>
-		</section>
 
-		<section class="main__container">
-			<div class="main__container-title">
-				<p>TECNOLOGIAS DE DESARROLLO</p>
-			</div>
-
-			<div class="main__container-items">
-				<div class="main__container-item">
+				<div class="habilidades__item">
 					<figure>
-						<img src="imgs/icons/windows.svg" alt="" />
+						<img src="imgs/icons/css.svg" alt="" />
 					</figure>
 
-					<p>Windows</p>
+					<p>Css</p>
+
+					<span class="">⭐⭐⭐⭐</span>
 				</div>
-				<div class="main__container-item">
+
+				<div class="habilidades__item">
 					<figure>
-						<img src="imgs/icons/vs-code.svg" alt="" />
+						<img src="imgs/icons/typescript.svg" alt="" />
 					</figure>
 
-					<p>Vs Code</p>
+					<p>Typescript</p>
+					<span class="">⭐⭐</span>
 				</div>
-				<div class="main__container-item">
+
+				<div class="habilidades__item">
 					<figure>
-						<img src="imgs/icons/git.svg" alt="" />
+						<img src="imgs/icons/angular.svg" alt="" />
 					</figure>
 
-					<p>Git</p>
+					<p>Angular</p>
+					<span class="">⭐⭐⭐</span>
 				</div>
-				<div class="main__container-item">
+
+				<div class="habilidades__item">
 					<figure>
-						<img src="imgs/icons/github.svg" alt="" />
+						<img src="imgs/icons/bootstrap.svg" alt="" />
 					</figure>
 
-					<p>Github</p>
+					<p>Bootstrap</p>
+					<span class="">⭐⭐⭐⭐</span>
 				</div>
-				<div class="main__container-item">
+
+				<div class="habilidades__item">
 					<figure>
-						<img src="imgs/icons/figma.svg" alt="" />
+						<!-- TODO: BUSCAR IMG -->
+						<img src="imgs/icons/bootstrap.svg" alt="" />
 					</figure>
 
-					<p>Figma</p>
+					<p>PHP</p>
+					<span class="">⭐⭐⭐⭐</span>
 				</div>
-			</div>
-		</section>
 
-		<section class="main__3" id="servicios">
-			<div class="servicios__items">
-				<div class="servicios__item">
+				<div class="habilidades__item">
 					<figure>
-						<img src="" alt="" />
+						<!-- TODO: BUSCAR IMG -->
+						<img src="imgs/icons/bootstrap.svg" alt="" />
 					</figure>
 
-					<div>
-						<h3>Desarrollo de sitios web</h3>
-						<p>Creación de páginas web responsivas.</p>
+					<p>Wordpress</p>
+					<span class="">⭐⭐⭐⭐</span>
+				</div>
+			</section>
+
+			<section class="main__3 animate__animated animate__fadeIn">
+				<div class="aprendiendo__main">
+					<figure>
+						<img
+							src="imgs/main-1.jpg"
+							alt=""
+							class="animate__animated animate__fadeIn"
+						/>
+					</figure>
+
+					<div class="aprendiendo__main-title">
+						<p>APRENDIENDO</p>
 					</div>
 				</div>
-				<div class="servicios__item">
-					<figure>
-						<img src="" alt="" />
-					</figure>
+				<div class="aprendiendo__items">
+					<div class="aprendiendo__item">
+						<figure>
+							<img src="imgs/icons/react.svg" alt="" />
+						</figure>
 
-					<div>
-						<h3>Soporte Tecnico</h3>
-						<p>
-							Reparación, mantenimiento preventivo y correctivo en
-							equipo de cómputo.
-						</p>
+						<p>React</p>
+					</div>
+					<div class="aprendiendo__item">
+						<figure>
+							<img src="" alt="" />
+						</figure>
+
+						<p>UX/UI</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="aprendiendo__container">
-				<figure>
-					<img src="imgs/main-1.jpg" alt="" />
-				</figure>
-
-				<div class="aprendiendo__container-title">
-					<p>SERVICIOS</p>
+			<section class="main__container">
+				<div class="main__container-title">
+					<p>TECNOLOGIAS DE DESARROLLO</p>
 				</div>
-			</div>
-		</section>
 
-		<section class="contacto__container" id="contact">
-			<div class="contacto__description">
-				<p>CONTACTAME</p>
-				<p>Preguntame sin compromiso</p>
-			</div>
+				<div class="main__container-items">
+					<div class="main__container-item">
+						<figure>
+							<img src="imgs/icons/windows.svg" alt="" />
+						</figure>
 
-			<form>
-				<div class="contacto__form-group">
-					<div>
-						<label for="name">Nombre</label>
-						<input type="text" id="name" required />
+						<p>Windows</p>
 					</div>
-					<div>
-						<label for="email">email</label>
-						<input type="email" id="email" required />
+					<div class="main__container-item">
+						<figure>
+							<img src="imgs/icons/vs-code.svg" alt="" />
+						</figure>
+
+						<p>Vs Code</p>
+					</div>
+					<div class="main__container-item">
+						<figure>
+							<img src="imgs/icons/git.svg" alt="" />
+						</figure>
+
+						<p>Git</p>
+					</div>
+					<div class="main__container-item">
+						<figure>
+							<img src="imgs/icons/github.svg" alt="" />
+						</figure>
+
+						<p>Github</p>
+					</div>
+					<div class="main__container-item">
+						<figure>
+							<img src="imgs/icons/figma.svg" alt="" />
+						</figure>
+
+						<p>Figma</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="main__3" id="servicios">
+				<div class="servicios__items">
+					<div class="servicios__item">
+						<figure>
+							<img src="" alt="" />
+						</figure>
+
+						<div>
+							<h3>Desarrollo de sitios web</h3>
+							<p>Creación de páginas web responsivas.</p>
+						</div>
+					</div>
+					<div class="servicios__item">
+						<figure>
+							<img src="" alt="" />
+						</figure>
+
+						<div>
+							<h3>Soporte Tecnico</h3>
+							<p>
+								Reparación, mantenimiento preventivo y
+								correctivo en equipo de cómputo.
+							</p>
+						</div>
 					</div>
 				</div>
 
-				<div>
-					<label for="message">Mensage</label>
-					<textarea id="message" cols="30" rows="10"></textarea>
+				<div class="aprendiendo__container">
+					<figure>
+						<img src="imgs/main-1.jpg" alt="" />
+					</figure>
+
+					<div class="aprendiendo__container-title">
+						<p>SERVICIOS</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacto__container" id="contact">
+				<div class="contacto__description">
+					<p>CONTACTAME</p>
+					<p>Preguntame sin compromiso</p>
 				</div>
 
-				<div class="form__btn">
-					<button class="btn" type="button" id="send">Enviar</button>
-				</div>
-			</form>
-		</section>
+				<form>
+					<div class="contacto__form-group">
+						<div>
+							<label for="name">Nombre</label>
+							<input type="text" id="name" required />
+						</div>
+						<div>
+							<label for="email">email</label>
+							<input type="email" id="email" required />
+						</div>
+					</div>
 
-		<section class="sociales__container">
-			<div class="sociales__container-title">
-				<p>REDES SOCIALES</p>
-			</div>
-			<div class="sociales__items">
-				<div class="sociales-item animate__animated animate__fadeIn">
-					<a href="mailto:eduardomay237@gmail.com">
-						<img src="imgs/icons/gmail.svg" alt="" />
-					</a>
+					<div>
+						<label for="message">Mensage</label>
+						<textarea id="message" cols="30" rows="10"></textarea>
+					</div>
+
+					<div class="form__btn">
+						<button class="btn" type="button" id="send">
+							Enviar
+						</button>
+					</div>
+				</form>
+			</section>
+
+			<section class="sociales__container">
+				<div class="sociales__container-title">
+					<p>REDES SOCIALES</p>
 				</div>
-				<div class="sociales-item animate__animated animate__fadeIn">
-					<a href="mailto:eduardo_may@outlook.com">
-						<img src="imgs/icons/outlook.svg" alt="" />
-					</a>
-				</div>
-				<div class="sociales-item animate__animated animate__fadeIn">
-					<a
-						href="https://www.facebook.com/eduardo.may.2018"
-						target="_blank"
+				<div class="sociales__items">
+					<div
+						class="sociales-item animate__animated animate__fadeIn"
 					>
-						<img src="imgs/icons/facebook.svg" alt="" />
-					</a>
-				</div>
-				<div class="sociales-item animate__animated animate__fadeIn">
-					<a
-						href="https://www.instagram.com/eduardo_may_kumul/"
-						target="_blank"
+						<a href="mailto:eduardomay237@gmail.com">
+							<img src="imgs/icons/gmail.svg" alt="" />
+						</a>
+					</div>
+					<div
+						class="sociales-item animate__animated animate__fadeIn"
 					>
-						<img src="imgs/icons/instagram.svg" alt="" />
-					</a>
+						<a href="mailto:eduardo_may@outlook.com">
+							<img src="imgs/icons/outlook.svg" alt="" />
+						</a>
+					</div>
+					<div
+						class="sociales-item animate__animated animate__fadeIn"
+					>
+						<a
+							href="https://www.facebook.com/eduardo.may.2018"
+							target="_blank"
+						>
+							<img src="imgs/icons/facebook.svg" alt="" />
+						</a>
+					</div>
+					<div
+						class="sociales-item animate__animated animate__fadeIn"
+					>
+						<a
+							href="https://www.instagram.com/eduardo_may_kumul/"
+							target="_blank"
+						>
+							<img src="imgs/icons/instagram.svg" alt="" />
+						</a>
+					</div>
+					<div
+						class="sociales-item animate__animated animate__fadeIn"
+					>
+						<a href="#">
+							<img src="imgs/icons/discord.svg" alt="" />
+						</a>
+					</div>
+					<div
+						class="sociales-item animate__animated animate__fadeIn"
+					>
+						<a href="https://github.com/EduardoMay" target="_blank">
+							<img src="imgs/icons/github.svg" alt="" />
+						</a>
+					</div>
 				</div>
-				<div class="sociales-item animate__animated animate__fadeIn">
-					<a href="#">
-						<img src="imgs/icons/discord.svg" alt="" />
-					</a>
-				</div>
-				<div class="sociales-item animate__animated animate__fadeIn">
-					<a href="https://github.com/EduardoMay" target="_blank">
-						<img src="imgs/icons/github.svg" alt="" />
-					</a>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<footer>
-			<div class="footer__info">
-				(c) 2020. Todos los derechos reservados. Soy Eduardo May
-			</div>
-			<div class="footer__logo">Soy Eduardo May</div>
-		</footer>
+			<footer>
+				<div class="footer__info">
+					(c) 2020. Todos los derechos reservados. Soy Eduardo May
+				</div>
+				<div class="footer__logo">Soy Eduardo May</div>
+			</footer>
+		</div>
 
 		<script>
 			const btn = document.getElementById('send');

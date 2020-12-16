@@ -27,6 +27,10 @@ header {
   background-color: #ffffff;
 }
 
+.d-none {
+  display: none;
+}
+
 .btn {
   padding: 10px 20px;
   font-size: 1rem;
@@ -165,7 +169,7 @@ nav > .logo {
     grid-column-start: initial;
     grid-column-end: initial;
     grid-template-columns: 1fr;
-    grid-template-rows: 20px 1fr 1fr;
+    grid-template-rows: 12px repeat(4, 1fr);
     align-items: center;
     justify-items: center;
     background-color: #ffffff;
