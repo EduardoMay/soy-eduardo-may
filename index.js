@@ -38,7 +38,7 @@ function scrollToElement(e) {
 		.getBoundingClientRect().top;
 
 	document.querySelector('body, html').scroll({
-		top: positionTop,
+		top: positionTop + scrollY - 60,
 		behavior: 'smooth',
 	});
 }
@@ -46,7 +46,8 @@ function scrollToElement(e) {
 function switchViewMenu() {
 	document.querySelector('.nav__items').classList.toggle('active');
 	document.querySelector('main').classList.toggle('nav-active');
-	document.querySelector('body').classList.toggle('nav-active-body');
+	document.querySelector('html').classList.toggle('no-scroll');
+	document.querySelector('body').classList.toggle('no-scroll');
 }
 
 window.addEventListener('resize', () => {
@@ -71,4 +72,10 @@ window.addEventListener('DOMContentLoaded', () => {
 			item.removeEventListener('click', scrollToElement);
 		});
 	}
+});
+
+window.addEventListener('scroll', (_) => {
+	let header = document.querySelector('header');
+
+	header.classList.toggle('sticky', window.scrollY > 0);
 });

@@ -28,11 +28,6 @@ img {
   object-fit: cover;
 }
 
-header {
-  height: 80px;
-  background-color: #ffffff;
-}
-
 h1,
 .h1 {
   font-size: 2.5rem;
@@ -197,6 +192,25 @@ p {
     grid-template-rows: auto 1fr;
   }
 }
+header {
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  z-index: 1000;
+  transition: 0.3s all ease;
+}
+header nav a {
+  color: #ffffff;
+}
+
+header.sticky {
+  color: #212529;
+  background-color: white;
+}
+header.sticky nav a {
+  color: #212529;
+}
+
 nav {
   margin: 0 24px;
   display: grid;
@@ -204,7 +218,6 @@ nav {
   grid-template-rows: 80px;
   align-items: center;
   grid-gap: 24px;
-  color: #000000;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
 }
@@ -224,10 +237,6 @@ nav > .logo {
   transition: all 0.3s;
 }
 
-.nav__items > a {
-  color: #000000;
-}
-
 .active-closed,
 .active-open {
   display: none;
@@ -239,16 +248,19 @@ nav > .logo {
   }
 
   header {
+    width: 100vw;
     height: 60px;
     display: flex;
     align-items: center;
   }
-
-  nav {
+  header nav {
     margin: 0 16px;
     position: relative;
     grid-template-rows: 40px;
     grid-gap: 0;
+  }
+  header nav a {
+    color: #212529;
   }
 
   .nav__items {
@@ -257,7 +269,7 @@ nav > .logo {
     position: fixed;
     top: 60px;
     left: -120%;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -294,14 +306,14 @@ nav > .logo {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 100;
     transition: all 0.3s;
   }
 
-  .nav-active-body {
-    position: fixed;
+  .no-scroll {
+    overflow: hidden;
   }
 }
 .profile__container {
