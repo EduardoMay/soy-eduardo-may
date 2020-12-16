@@ -22,6 +22,7 @@ nav > .logo {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 24px;
 	text-align: center;
+	transition: all 0.3s;
 }
 
 .nav__items > a {
@@ -34,6 +35,9 @@ nav > .logo {
 }
 
 @media (max-width: 576px) {
+	main {
+		transition: all 0.3s;
+	}
 	header {
 		height: 60px;
 		display: flex;
@@ -57,7 +61,6 @@ nav > .logo {
 		display: flex;
 		flex-direction: column;
 		background-color: #ffffff;
-		transition: all 0.3s;
 
 		.nav__link {
 			padding: 1rem 0;
@@ -83,7 +86,6 @@ nav > .logo {
 	}
 
 	.nav-active {
-		transition: all 0.3s;
 		transform: translate(80%, 0);
 	}
 

@@ -25,15 +25,29 @@
 				></span>
 
 				<div class="nav__items">
-					<a href="/" class="nav__link">Inicio</a>
-					<a href="#habilidades" class="nav__link">Habilidades</a>
-					<a href="#servicios" class="nav__link">Servicios</a>
-					<a href="#contact" class="nav__link">Contacto</a>
+					<a href="#inicio" target-nav="inicio" class="nav__link"
+						>Inicio</a
+					>
+					<a
+						href="#habilidades"
+						target-nav="habilidades"
+						class="nav__link"
+						>Habilidades</a
+					>
+					<a
+						href="#servicios"
+						target-nav="servicios"
+						class="nav__link"
+						>Servicios</a
+					>
+					<a href="#contact" target-nav="contact" class="nav__link"
+						>Contacto</a
+					>
 				</div>
 			</nav>
 		</header>
 
-		<main>
+		<main id="inicio">
 			<section class="main__1">
 				<img
 					class="animate__animated animate__fadeIn"
@@ -400,32 +414,6 @@
 			</footer>
 		</main>
 
-		<script>
-			const btn = document.getElementById('send');
-
-			btn.addEventListener('click', (_) => {
-				const name = document.getElementById('name').value;
-				const email = document.getElementById('email').value;
-				const message = document.getElementById('message').value;
-
-				const messageWa = `Nombre: *${name}*; Email: *${email}*; Mensaje: ${message}`;
-
-				const url = `https://wa.me/529981362079?text=${messageWa}`;
-
-				window.open(url, '_blank');
-			});
-
-			const openMenuBtn = document.getElementById('btn-open');
-
-			openMenuBtn.addEventListener('click', (_) => {
-				document
-					.querySelector('.nav__items')
-					.classList.toggle('active');
-				document.querySelector('main').classList.toggle('nav-active');
-				document
-					.querySelector('body')
-					.classList.toggle('nav-active-body');
-			});
-		</script>
+		<script src="index.js"></script>
 	</body>
 </html>
