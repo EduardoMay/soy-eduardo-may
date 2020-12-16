@@ -15,7 +15,7 @@ nav > .logo {
 	grid-column-end: 3;
 }
 
-.nav-items {
+.nav__items {
 	grid-column-start: 8;
 	grid-column-end: 12;
 	display: grid;
@@ -24,7 +24,7 @@ nav > .logo {
 	text-align: center;
 }
 
-.nav-items > a {
+.nav__items > a {
 	color: #000000;
 }
 
@@ -35,7 +35,9 @@ nav > .logo {
 
 @media (max-width: 576px) {
 	header {
-		height: 40px;
+		height: 60px;
+		display: flex;
+		align-items: center;
 	}
 
 	nav {
@@ -45,25 +47,25 @@ nav > .logo {
 		grid-gap: 0;
 	}
 
-	.nav-items {
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		top: 0;
+	.nav__items {
+		width: 80vw;
+		height: calc(100vh - 60px);
+		position: fixed;
+		top: 60px;
 		left: -120%;
 		z-index: 100;
-		grid-column-start: initial;
-		grid-column-end: initial;
-		grid-template-columns: 1fr;
-		grid-template-rows: 12px repeat(4, 1fr);
-		align-items: center;
-		justify-items: center;
+		display: flex;
+		flex-direction: column;
 		background-color: #ffffff;
-		transition: all 180ms;
+		transition: all 0.3s;
+
+		.nav__link {
+			padding: 1rem 0;
+		}
 	}
 
-	.nav-items.active {
-		left: -16px;
+	.nav__items.active {
+		left: 0%;
 	}
 
 	.active-closed {
@@ -78,5 +80,26 @@ nav > .logo {
 		display: block;
 		grid-column-start: 12;
 		text-align: center;
+	}
+
+	.nav-active {
+		transition: all 0.3s;
+		transform: translate(80%, 0);
+	}
+
+	.nav-active::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba($color: #000000, $alpha: 0.3);
+		z-index: 100;
+		transition: all 0.3s;
+	}
+
+	.nav-active-body {
+		position: fixed;
 	}
 }

@@ -24,19 +24,16 @@
 					><i class="fa fa-bars"></i
 				></span>
 
-				<div class="nav-items">
-					<span class="active-closed" id="btn-close">
-						<i class="fa fa-times"></i>
-					</span>
-					<a href="/" class="nav-item-1">Inicio</a>
-					<a href="#habilidades" class="nav-item-2">Habilidades</a>
-					<a href="#servicios" class="nav-item-2">Servicios</a>
-					<a href="#contact" class="nav-item-2">Contacto</a>
+				<div class="nav__items">
+					<a href="/" class="nav__link">Inicio</a>
+					<a href="#habilidades" class="nav__link">Habilidades</a>
+					<a href="#servicios" class="nav__link">Servicios</a>
+					<a href="#contact" class="nav__link">Contacto</a>
 				</div>
 			</nav>
 		</header>
 
-		<div class="d-none">
+		<main>
 			<section class="main__1">
 				<img
 					class="animate__animated animate__fadeIn"
@@ -50,14 +47,18 @@
 				</div>
 			</section>
 
-			<section class="profile__container">
+			<section class="container profile__container">
 				<figure>
 					<img src="imgs/profile.jpg" alt="" />
 				</figure>
 
 				<div class="profile__description">
 					<span class="line__2"></span>
-					<p>Hola, soy Eduardo, tengo 23 años y soy de Mexico.</p>
+					<p>
+						Hola tengo 23 años, soy un joven con ganas de trabajar,
+						con la poca experiencia que tengo en el sector laboral
+						sé que puedo dar un buen desempeño.
+					</p>
 					<p>Me gusta el desarrollo web y las nuevas tecnologias.</p>
 				</div>
 			</section>
@@ -66,7 +67,7 @@
 				<h2>HABILIDADES</h2>
 			</section>
 
-			<section class="habilidades__items">
+			<section class="container habilidades__items">
 				<div class="habilidades__item">
 					<figure>
 						<img src="imgs/icons/html5.svg" alt="" />
@@ -74,7 +75,12 @@
 
 					<p>Html</p>
 
-					<span class="">⭐⭐⭐⭐</span>
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
@@ -84,7 +90,11 @@
 
 					<p>Js</p>
 
-					<span class="">⭐⭐⭐</span>
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
@@ -94,7 +104,12 @@
 
 					<p>Css</p>
 
-					<span class="">⭐⭐⭐⭐</span>
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
@@ -103,7 +118,11 @@
 					</figure>
 
 					<p>Typescript</p>
-					<span class="">⭐⭐</span>
+
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
@@ -112,7 +131,12 @@
 					</figure>
 
 					<p>Angular</p>
-					<span class="">⭐⭐⭐</span>
+
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
@@ -121,27 +145,41 @@
 					</figure>
 
 					<p>Bootstrap</p>
-					<span class="">⭐⭐⭐⭐</span>
+
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
 					<figure>
-						<!-- TODO: BUSCAR IMG -->
-						<img src="imgs/icons/bootstrap.svg" alt="" />
+						<img src="imgs/icons/php.svg" alt="" />
 					</figure>
 
 					<p>PHP</p>
-					<span class="">⭐⭐⭐⭐</span>
+
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 
 				<div class="habilidades__item">
 					<figure>
-						<!-- TODO: BUSCAR IMG -->
-						<img src="imgs/icons/bootstrap.svg" alt="" />
+						<img src="imgs/icons/wordpress.svg" alt="" />
 					</figure>
 
 					<p>Wordpress</p>
-					<span class="">⭐⭐⭐⭐</span>
+
+					<div class="habilidades__item-star">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+					</div>
 				</div>
 			</section>
 
@@ -156,7 +194,7 @@
 					</figure>
 
 					<div class="aprendiendo__main-title">
-						<p>APRENDIENDO</p>
+						<h2>APRENDIENDO</h2>
 					</div>
 				</div>
 				<div class="aprendiendo__items">
@@ -177,41 +215,41 @@
 				</div>
 			</section>
 
-			<section class="main__container">
-				<div class="main__container-title">
-					<p>TECNOLOGIAS DE DESARROLLO</p>
+			<section class="tecnologias__container">
+				<div class="tecnologias__container-title">
+					<h2>TECNOLOGIAS DE DESARROLLO</h2>
 				</div>
 
-				<div class="main__container-items">
-					<div class="main__container-item">
+				<div class="tecnologias__container-items">
+					<div class="tecnologias__container-item">
 						<figure>
 							<img src="imgs/icons/windows.svg" alt="" />
 						</figure>
 
 						<p>Windows</p>
 					</div>
-					<div class="main__container-item">
+					<div class="tecnologias__container-item">
 						<figure>
 							<img src="imgs/icons/vs-code.svg" alt="" />
 						</figure>
 
 						<p>Vs Code</p>
 					</div>
-					<div class="main__container-item">
+					<div class="tecnologias__container-item">
 						<figure>
 							<img src="imgs/icons/git.svg" alt="" />
 						</figure>
 
 						<p>Git</p>
 					</div>
-					<div class="main__container-item">
+					<div class="tecnologias__container-item">
 						<figure>
 							<img src="imgs/icons/github.svg" alt="" />
 						</figure>
 
 						<p>Github</p>
 					</div>
-					<div class="main__container-item">
+					<div class="tecnologias__container-item">
 						<figure>
 							<img src="imgs/icons/figma.svg" alt="" />
 						</figure>
@@ -248,20 +286,20 @@
 					</div>
 				</div>
 
-				<div class="aprendiendo__container">
+				<div class="servicios__img">
 					<figure>
 						<img src="imgs/main-1.jpg" alt="" />
 					</figure>
 
-					<div class="aprendiendo__container-title">
-						<p>SERVICIOS</p>
+					<div class="servicios__img-title">
+						<h2>SERVICIOS</h2>
 					</div>
 				</div>
 			</section>
 
 			<section class="contacto__container" id="contact">
 				<div class="contacto__description">
-					<p>CONTACTAME</p>
+					<h2>CONTACTAME</h2>
 					<p>Preguntame sin compromiso</p>
 				</div>
 
@@ -292,67 +330,75 @@
 
 			<section class="sociales__container">
 				<div class="sociales__container-title">
-					<p>REDES SOCIALES</p>
+					<h2>REDES SOCIALES</h2>
 				</div>
 				<div class="sociales__items">
 					<div
-						class="sociales-item animate__animated animate__fadeIn"
+						class="sociales__item animate__animated animate__fadeIn"
 					>
 						<a href="mailto:eduardomay237@gmail.com">
-							<img src="imgs/icons/gmail.svg" alt="" />
+							<img src="imgs/icons/gmail.svg" alt="gmail" />
 						</a>
 					</div>
 					<div
-						class="sociales-item animate__animated animate__fadeIn"
+						class="sociales__item animate__animated animate__fadeIn"
 					>
 						<a href="mailto:eduardo_may@outlook.com">
-							<img src="imgs/icons/outlook.svg" alt="" />
+							<img src="imgs/icons/outlook.svg" alt="outlook" />
 						</a>
 					</div>
 					<div
-						class="sociales-item animate__animated animate__fadeIn"
+						class="sociales__item animate__animated animate__fadeIn"
 					>
 						<a
 							href="https://www.facebook.com/eduardo.may.2018"
 							target="_blank"
 						>
-							<img src="imgs/icons/facebook.svg" alt="" />
+							<img src="imgs/icons/facebook.svg" alt="facebook" />
 						</a>
 					</div>
 					<div
-						class="sociales-item animate__animated animate__fadeIn"
+						class="sociales__item animate__animated animate__fadeIn"
 					>
 						<a
 							href="https://www.instagram.com/eduardo_may_kumul/"
 							target="_blank"
 						>
-							<img src="imgs/icons/instagram.svg" alt="" />
+							<img
+								src="imgs/icons/instagram.svg"
+								alt="instagram"
+							/>
 						</a>
 					</div>
 					<div
-						class="sociales-item animate__animated animate__fadeIn"
+						class="sociales__item animate__animated animate__fadeIn"
 					>
 						<a href="#">
-							<img src="imgs/icons/discord.svg" alt="" />
+							<img src="imgs/icons/discord.svg" alt="discord" />
 						</a>
 					</div>
 					<div
-						class="sociales-item animate__animated animate__fadeIn"
+						class="sociales__item animate__animated animate__fadeIn"
 					>
 						<a href="https://github.com/EduardoMay" target="_blank">
-							<img src="imgs/icons/github.svg" alt="" />
+							<img src="imgs/icons/github.svg" alt="github" />
 						</a>
 					</div>
 				</div>
 			</section>
 
 			<footer>
-				<div class="footer__info">
-					(c) 2020. Todos los derechos reservados. Soy Eduardo May
+				<div class="container footer__container">
+					<div class="footer__info">
+						<p>
+							(c) 2020. Todos los derechos reservados. Soy Eduardo
+							May
+						</p>
+					</div>
+					<div class="footer__logo">Soy Eduardo May</div>
 				</div>
-				<div class="footer__logo">Soy Eduardo May</div>
 			</footer>
-		</div>
+		</main>
 
 		<script>
 			const btn = document.getElementById('send');
@@ -369,15 +415,16 @@
 				window.open(url, '_blank');
 			});
 
-			const closeMenuBtn = document.getElementById('btn-close');
 			const openMenuBtn = document.getElementById('btn-open');
 
 			openMenuBtn.addEventListener('click', (_) => {
-				document.querySelector('.nav-items').classList.toggle('active');
-			});
-
-			closeMenuBtn.addEventListener('click', (_) => {
-				document.querySelector('.nav-items').classList.toggle('active');
+				document
+					.querySelector('.nav__items')
+					.classList.toggle('active');
+				document.querySelector('main').classList.toggle('nav-active');
+				document
+					.querySelector('body')
+					.classList.toggle('nav-active-body');
 			});
 		</script>
 	</body>

@@ -1,11 +1,12 @@
 .aprendiendo__main {
 	overflow: hidden;
 	position: relative;
-}
 
-.aprendiendo__main img {
-	height: 100%;
-	object-position: center;
+	img {
+		width: 100%;
+		height: 100%;
+		object-position: center;
+	}
 }
 
 .aprendiendo__main-title {
@@ -22,13 +23,6 @@
 	align-items: center;
 	justify-content: center;
 	color: $color-b-secondary;
-}
-
-.aprendiendo__main-title p {
-	font-family: $font-primary;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 60px;
 }
 
 .aprendiendo__items {
@@ -48,33 +42,50 @@
 	justify-content: center;
 	border-radius: 16px;
 	transition: 180ms all;
+
+	&:hover {
+		box-shadow: 0px 5px 30px rgba(141, 139, 139, 0.25);
+	}
+
+	figure {
+		width: 100px;
+		height: 100px;
+		margin: 41px 0;
+		border-radius: 50%;
+		border: 3px solid #c4c4c4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 64px;
+			height: 64px;
+		}
+	}
+
+	p {
+		padding: 10px 16px;
+		font-family: $font-primary;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		margin-bottom: 29px;
+	}
 }
 
-.aprendiendo__item:hover {
-	box-shadow: 0px 5px 30px rgba(141, 139, 139, 0.25);
+@media (min-width: 576px) {
+	.aprendiendo__main-title h2 {
+		font-size: 60px;
+	}
 }
 
-.aprendiendo__item figure {
-	width: 100px;
-	height: 100px;
-	margin: 41px 0;
-	border-radius: 50%;
-	border: 3px solid #c4c4c4;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.aprendiendo__item figure img {
-	width: 64px;
-	height: 64px;
-}
-
-.aprendiendo__item p {
-	padding: 10px 16px;
-	font-family: $font-primary;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24px;
-	margin-bottom: 29px;
+@media (max-width: 576px) {
+	.aprendiendo__items {
+		width: 90%;
+		margin: auto;
+		margin-top: 70px;
+		grid-gap: 24px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(1, 270px);
+	}
 }
