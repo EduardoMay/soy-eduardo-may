@@ -126,11 +126,12 @@ nav > .logo {
 }
 
 .nav-items {
-  grid-column-start: 10;
+  grid-column-start: 8;
   grid-column-end: 12;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
+  text-align: center;
 }
 
 .nav-items > a {
@@ -234,7 +235,7 @@ nav > .logo {
   margin: 0 166px;
   margin-bottom: 140px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 258px;
   grid-gap: 24px;
 }
