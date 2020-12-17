@@ -1,8 +1,20 @@
+.habilidades__title {
+	margin-bottom: 35px;
+}
+
 .habilidades__items {
 	margin-bottom: 70px;
 	display: grid;
-	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: 258px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 260px);
+	grid-gap: 24px;
+}
+
+.habilidades__items-soporte {
+	margin-bottom: 70px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 260px;
 	grid-gap: 24px;
 }
 
@@ -41,10 +53,7 @@
 
 	p {
 		padding: 10px 16px;
-		font-family: $font-primary;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 24px;
+		text-align: center;
 	}
 }
 
@@ -52,5 +61,10 @@
 	.habilidades__items {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(4, 270px);
+	}
+
+	.habilidades__items-soporte {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(2, 290px);
 	}
 }
