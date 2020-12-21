@@ -10,7 +10,8 @@
 	grid-gap: 24px;
 }
 
-.habilidades__items-soporte {
+.habilidades__items-soporte,
+.habilidades__items-trabajos {
 	margin-bottom: 70px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -65,6 +66,11 @@
 
 	.habilidades__items-soporte {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(2, 290px);
+		grid-template-rows: 290px auto;
+	}
+
+	.habilidades__items-trabajos {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 290px auto;
 	}
 }
