@@ -1,0 +1,25 @@
+footer {
+	width: 100%;
+	padding: 35px 0;
+	background: #028090;
+
+	.footer__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.footer__info p {
+	color: #ffffff;
+}
+
+@media (max-width: 576px) {
+	footer {
+		text-align: center;
+
+		.footer__container {
+			flex-direction: column;
+		}
+	}
+}
