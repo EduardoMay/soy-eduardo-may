@@ -1,16 +1,14 @@
 .tecnologias__container {
 	margin-bottom: 70px;
-	padding: 0 24px;
+	padding: 0 48px;
 	background: linear-gradient(90deg, #02c39a 0%, #028090 100%);
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 500px;
 	grid-gap: 24px;
 
 	&-title {
 		align-self: center;
-		grid-column-start: 2;
-		grid-column-end: 7;
 
 		h2 {
 			color: #ffffff;
@@ -18,9 +16,6 @@
 	}
 
 	&-items {
-		grid-column-start: 7;
-		grid-column-end: 12;
-
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 24px;
@@ -87,16 +82,12 @@
 			text-align: center;
 			margin-top: 35px;
 			align-self: center;
-			grid-column-start: 1;
-			grid-column-end: 1;
 		}
 
 		&-items {
 			width: 90%;
 			margin: 0 auto;
 			margin-bottom: 35px;
-			grid-column-start: 1;
-			grid-column-end: 1;
 
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(3, 230px);
@@ -106,5 +97,21 @@
 	.tecnologias__container-item {
 		align-self: initial;
 		height: initial;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+	.tecnologias__container {
+		padding: 48px;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+
+		&-title {
+			text-align: center;
+		}
+
+		&-items {
+			grid-template-columns: repeat(5, 1fr);
+		}
 	}
 }
