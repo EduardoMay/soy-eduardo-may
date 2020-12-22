@@ -8,6 +8,10 @@ header {
 
 	nav a {
 		color: #ffffff;
+
+		&:hover {
+			color: $color-secondary;
+		}
 	}
 
 	.logo {
@@ -25,6 +29,10 @@ header.sticky {
 
 	nav a {
 		color: $color-b-secondary;
+
+		&:hover {
+			color: $color-resalt-1;
+		}
 	}
 
 	.logo {
@@ -33,9 +41,10 @@ header.sticky {
 }
 
 nav {
-	margin: 0 24px;
+	width: 75%;
+	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 80px;
 	align-items: center;
 	grid-gap: 24px;
@@ -43,16 +52,9 @@ nav {
 	font-weight: 600;
 }
 
-nav > .logo {
-	grid-column-start: 2;
-	grid-column-end: 3;
-}
-
 .nav__items {
-	grid-column-start: 8;
-	grid-column-end: 12;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 24px;
 	text-align: center;
 	transition: all 0.3s;
@@ -88,6 +90,16 @@ nav > .logo {
 			a {
 				color: $color-b-secondary;
 			}
+		}
+	}
+
+	header .logo {
+		color: $color-b-secondary;
+	}
+
+	.active-open {
+		i {
+			color: $color-b-secondary;
 		}
 	}
 

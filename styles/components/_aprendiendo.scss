@@ -21,10 +21,10 @@
 }
 
 .aprendiendo__items {
-	margin: 0 170px;
+	padding: 0 24px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 50px;
+	grid-gap: 48px;
 }
 
 .aprendiendo__item {
@@ -76,6 +76,7 @@
 	}
 
 	.aprendiendo__items {
+		padding: 0;
 		width: 90%;
 		margin: auto;
 		margin-top: 70px;
