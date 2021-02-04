@@ -15,7 +15,11 @@ header {
 	}
 
 	.logo {
-		color: #ffffff;
+		display: flex;
+
+		svg {
+			width: 183px;
+		}
 	}
 }
 
